@@ -154,7 +154,7 @@ body {
 .slider li input:checked ~ div {
   opacity: 1;
   visibility: visible;
-  transition: 2s;
+  transition: 2.5s;
   z-index: 10;
 }
 
