@@ -102,42 +102,62 @@ body {
   height: 500px;
   background: white;
   border-bottom: rgb(126, 126, 126);
-  display: block;
+  margin: auto;
+  position: relative;
+  padding-inline-start: 0;
+}
+
+.slider li {
+  list-style: none;
   position: absolute;
-}
-
-.slide{
-  width: 100%;
+  margin: auto;
   height: 100%;
-  display: block;
-  position: inherit;
-  transition: 0.5s;
+  width: 100%;
 }
-  .main{
-    background-color: mediumaquamarine;
-    left: 0;
-    
-  }
-  .next{
-    background-color: rgb(28, 87, 13);
-    left: +100%;
-    
-  }
-  .before{
-    background-color: rgb(204, 245, 194);
-    left: -100%;
+.slider li div {
+  height: 100%;
+  width: 100%;
+}
 
-    
-  }
-  .slide-button-next {
-    display: block;
-    position: fixed;
-    background: black;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    right: 50px;
-  }
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: white;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.slider li div {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ div {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+  z-index: 10;
+}
+
 
 /* coleções */
 .colecoes {
