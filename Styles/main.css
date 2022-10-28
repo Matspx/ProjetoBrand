@@ -97,24 +97,62 @@ body {
 
 /* slider */
 
+.btn-voltar {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  top: 45%;
+  left: 30px;
+  position: absolute;
+  z-index: 1;
+}
+.btn-avancar {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  top: 45%;
+  right: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.slider-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
 .slider {
   width: 100%;
   height: 500px;
-  background: white;
-  border-bottom: rgb(126, 126, 126);
   margin: auto;
   position: relative;
   padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  
 }
 
-.slider li {
+/*.slider li {
   list-style: none;
   position: absolute;
   margin: auto;
   height: 100%;
   width: 100%;
+}*/
+
+.slide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-.slider li div {
+
+
+/*.slider li div {
   height: 100%;
   width: 100%;
 }
@@ -156,7 +194,7 @@ body {
   visibility: visible;
   transition: 2.5s;
   z-index: 10;
-}
+}*/
 
 
 /* coleções */
